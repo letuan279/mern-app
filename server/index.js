@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 const authRoute = require('./routes/auth')
 const courseRoute = require('./routes/course')
 const cors = require('cors')
@@ -27,11 +27,6 @@ app.use(express.json())
 app.use(cors())
 
 // Router
-app.all('/', function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    next()
-});
 app.use('/api/auth', authRoute)
 app.use('/api/courses', courseRoute)
 
