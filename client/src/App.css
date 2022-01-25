@@ -1,0 +1,29 @@
+.auth-page {
+  background-image: url(./assets/bg.jpg);
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dashboard-page {
+  background-image: url(./assets/bg.jpg);
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.auth-form {
+  max-width: 300px;
+}
+
+.course-title {
+  font-size: 20px;
+}
+.card-border {
+  border: 2px !important;
+}
