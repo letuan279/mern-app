@@ -5,7 +5,6 @@ const jwt = require('jsonwebtoken')
 // status 403 Forbidden
 
 const verifyToken = (req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*")
 
     const headerAuth = req.header('Authorization')
     const token = headerAuth && headerAuth.split(' ')[1] // Bearer <token>
