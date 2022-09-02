@@ -1,3 +1,3 @@
 # mern-app
 
-a website for link storing and studying.
+a website for Youtube link storing and studying.
